@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header {
+  margin: 30px;
+}
+header img {
+  position: relative;
+  left: 4%;
+}
+.container {
+  max-width: 100%;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: row;
+}
+.container .content .content-a {
+  margin: 0 35px;
+  padding: 0 35px;
+}
+
+.container .content .content-b {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 35px;
+  padding: 0 35px;
+}
+.container .content .content-b h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #4d4c99;
+}
+.container .content .content-b p {
+  color: #4d4c99;
+  font-weight: 500;
+}
+.container .content .content-b button {
+  width: 35%;
+  height: 13%;
+  border-radius: 35px;
+  border: none;
+  box-shadow: 10px 9px 10px #4d4c99;
+  background-color: #6562fc;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.container .content .content-b button:hover {
+  background-color: #e0a8fa;
+  color: #3a3971;
+  font-weight: 600;
+}
+.container .content .content-b button:active {
+  background-color: #e0a8fa;
+  box-shadow: 10px 9px 10px #773197;
+  transform: translateY(4px);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer p.attribution {
+  font-size: 12px;
+  color: #4d4c99;
+  position: relative;
+  left: 5%;
+}
+footer p.attribution a {
+  color: #4b285c;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer ul.social-links {
+  display: flex;
+  align-items: center;
+}
+footer ul.social-links li {
+  list-style: none;
+  position: relative;
+  bottom: 30%;
+  right: 50%;
+  margin: 0px 10px;
+}
+footer ul.social-links li.facebook {
+  padding: 3px;
+  box-sizing: border-box;
+  border: 2px solid #1f71ff;
+  width: 2.1vw;
+  height: 4.4vh;
+  border-radius: 50%;
+}
+footer ul.social-links li.facebook a i.fa-facebook-f {
+  position: relative;
+  left: 25%;
+}
+footer ul.social-links li.facebook a:hover {
+  box-shadow: 20px 1px 20px #154cab;
+}
+footer ul.social-links li.instagram {
+  padding: 3px;
+  box-sizing: border-box;
+  border: 2px solid #e4405f;
+  width: 2.1vw;
+  height: 4.4vh;
+  border-radius: 50%;
+}
+footer ul.social-links li.instagram a i.fa-instagram {
+  position: relative;
+  left: 23%;
+}
+footer ul.social-links li.instagram a:hover {
+  box-shadow: 20px 1px 20px #e4405f;
+}
+footer ul.social-links li.twitter {
+  padding: 3px;
+  box-sizing: border-box;
+  border: 2px solid #00acee;
+  width: 2.1vw;
+  height: 4.4vh;
+  border-radius: 50%;
+}
+footer ul.social-links li.twitter a i.fa-twitter {
+  position: relative;
+  left: 23%;
+}
+footer ul.social-links li.twitter a:hover {
+  box-shadow: 20px 1px 20px #00acee;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    background-image: url("images/bg-mobile.svg");
+    background-position: center;
+    background-size: cover;
+  }
+  header img {
+    max-width: 50%;
+    display: block;
+  }
+  .container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .content {
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .content .content-a img {
+    width: 100%;
+  }
+  .container .content .content-b h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #4d4c99;
+    text-align: center;
+  }
+  .container .content .content-b p {
+    color: #4d4c99;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .container .content .content-b button {
+    width: 80%;
+    height: 6vh;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  footer p.attribution {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  footer ul.social-links {
+    align-items: center;
+    position: relative;
+    left: 35%;
+  }
+  footer ul.social-links li.facebook,
+  footer ul.social-links li.twitter,
+  footer ul.social-links li.instagram {
+    width: 10vw;
+    height: 5vh;
+  }
+}
